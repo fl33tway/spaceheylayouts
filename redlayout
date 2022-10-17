@@ -1,0 +1,230 @@
+@font-face {
+	font-family:daggersquare;
+	src:url("https://files.gamebanana.com/bitpit/daggersquare.otf");
+}
+
+*::selection {color:#ffffffaa;background:#ff333388;}
+*::-moz-selection {color:#ffffffaa;background:#ff333388;}
+
+.top img.logo {display:none;}
+.top > .left > a:after {
+	content:"www.mylittlemurderhouse.com";
+	font-size:15px;
+	cursor: var(--pointerCursor);
+	font-family:daggersquare;
+}
+
+nav {border-left:1px solid #ff0000;border-right:1px solid #ff0000;}
+
+b, h1, h2, h3, h4 {
+	font-family:daggersquare;
+}
+
+.comments-table {border:none !important;}
+
+body {
+	background:url("https://bit.ly/3EKP8B0");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+	
+	color:white;
+	
+	display:flex;
+	justify-content: center;
+	align-content: center;
+}
+
+a, .person > a > p, div.boxButton, .logout-btn {
+	color:red !important;
+	text-decoration:none !important;
+}
+
+.logout-btn:hover {border:none !important;}
+
+a:hover, .person > a:hover > p, div.boxButton:hover, .logout-btn:hover {
+	color:#ff5555 !important;
+	text-decoration-line:underline !important;
+}
+
+div.col.left > .table-section > .inner > table tr > td:nth-child(1) {background:transparent;color:#ff0000;border-bottom:1px solid #ff0000;}
+div.col.left > .table-section > .inner > table tr > td:nth-child(2) {background:transparent;color:#ff6666;border-bottom:1px solid #ff0000;border-left:1px solid #ff0000;}
+div.col.left > .table-section > .inner > table tr:last-child > td:nth-child(1) {background:transparent;color:#ff0000;/*border-bottom:none;*/}
+div.col.left > .table-section > .inner > table tr:last-child > td:nth-child(2) {background:transparent;color:#ff6666;/*border-bottom:none;*/border-left:1px solid #ff0000;}
+
+form label {color:#ff6666;}
+
+p.online {
+	content:url("https://files.gamebanana.com/bitpit/online_dcb1c.png");
+	cursor:var(--defaultCursor);
+}
+
+.container {width:900px;}
+
+main, footer {
+	background:rgba(0,0,0,0.7);
+	backdrop-filter:blur(5px);
+	border:1px solid red;
+	width:100%;
+	/*
+	padding-left:1vw;
+	padding-right:1vw;
+	*/
+	color:#ff6666;
+	font-size:14px;
+}
+
+button {font-size:12px;}
+
+footer > ul.links {
+	background:transparent !important;
+}
+
+ul.links > li:after, .top div.right {
+	color:#ff6666 !important;
+}
+
+.top {
+	background: #440000 !important;
+	/*position: sticky !important;
+	width:100%;
+	top:0px;*/
+}
+
+ul.links {
+	background: #660000 !important;
+	color:#ff0000 !important;
+	/*position: sticky !important;
+	width:100%;
+	top:34px;*/
+}
+
+div.col.right .heading, div.col.left .heading {
+	background: #660000;
+	color:#ff6666;
+	border:1px solid red;
+}
+
+.heading h4 {
+	/*background: #66000044;*/
+	color:#ff6666;
+	/*border:1px solid #ff000033;*/
+}
+
+/*.contact, .url-info*/ div.col.left > div:not(.general-about):not(.mood) {
+	background: #66000044;
+	color:#ff6666;
+	border:1px solid #ff000033;
+}
+
+textarea
+/*leftovers from ms93's comment box, not used here since css doesnt apply to spacehey's comment page*/, 
+
+.comments-table > tbody > tr > td, div.profile-info {
+	background: #66000044 !important;
+	color:#ff6666;
+	border:1px solid #ff0000;
+}
+
+.comments-table > tbody > tr > td:last-child {
+	border-left:none;
+}
+
+div.box.blog, div.topLeft.blogCard {
+	background: #66000044;
+	color:#ff6666;
+	border:1px solid #ff0000;
+}
+
+@media only screen and (min-width: 768px) {
+  div.blogs > div > div.comments  div.box.blog {
+  	/*margin-left:-10px !important;*/
+  }.topRight.blogPost{padding-left:0px !important;}
+  
+  div.blogs > div > .blog:nth-child(1) {
+  	margin-top:-10px;
+  	}
+}
+
+input[type="text"] {
+	background: #66000044;
+	color:#ff6666;
+	border:1px solid #ff0000;
+	text-decoration-line: none !important;
+}
+
+input[type="text"]:hover {
+	background: #66000099;
+	color:#ff6666;
+	border:1px solid #ff9999;
+}
+
+input[type="text"]:focus {
+	background: #66000077;
+	color:#ff6666;
+	border:1px solid #ff6666;
+}
+
+button {
+	background: #66000044;
+	color:#ff6666;
+	border:1px solid #ff0000;
+	text-decoration-line: none !important;
+}
+
+button:hover {
+	background: #66000099;
+	color:#ff6666;
+	border:1px solid #ff9999;
+}
+
+button:active {
+	background: #66000077;
+	color:#ff6666;
+	border:1px solid #ff6666;
+}
+
+div.blogTitle > .uName {
+	margin-top:50px !important;
+}
+
+/*#imgPreview {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+	
+	position: sticky;
+  height: 100vh;
+	margin-left:-4vw;
+	margin-right:-4vw;
+	width:calc(100% + 8vw);
+}*/
+
+.comment-replies {
+	border:none;
+}
+
+.comment-reply {
+	border-top:1px solid #ff0000 !important;
+}
+
+hr {
+	color:#880000;
+}
+
+hr.imghr {
+	border:none;
+	content:url("https://files.gamebanana.com/bitpit/page-divider_1551013771.png");
+	width:100%;
+	height:auto;
+}
+
+hr.imghr.preserveBorder {
+}
+
+.player.box {
+  border:1px solid #ff0000;
+	color:#ff0000;
+}
